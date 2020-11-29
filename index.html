@@ -8,32 +8,51 @@
     <title>Filip Szwedo | Projekt 1 - HTML i CSS @ CodersCamp</title>
     <meta name="description" content="Project no.1 in area of HTML and CSS @ CodersCamp open web development course.">
 
-    <link rel = "stylesheet" type = "text.css" href = "styles.css"/>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 
 </head>
 
 <body>
-
 <nav>
-    <div>
-        <img src="images/pwrrt.jpg" alt="RT09 Racing Car">
-    </div>
-    <div>
-        <img src="images/pwrrt.jpg" alt="RT09 Racing Car">
-    </div>
-    <div>
-        <img src="images/pwrrt.jpg" alt="RT09 Racing Car">
-    </div>
+   <p>About Me</p>
+   <p>Experience</p>
+   <p>Passion</p>
+   <p>Contact</p>
 </nav>
 
-<main>
+<main id="hide">
+    <section class="intro-images"> 
+        <div><img src="images/pwrrt.jpg" alt="RT09 Racing Car"/></div>
+    
+        <div><img src="images/bike.JPG" alt="Mountain Biking"/></div>
 
+        <div><img src="images/coding.jpg" alt="IT Career"/></div>
+    </section>
+
+    <a href="#section1">
+        <section class="clickable-section" id="section1">
+            <div class="button">
+                  About Me
+            </div>     
+            
+            <div class="clickable-section-image">
+                <img src="images/pwrrt.jpg" alt="RT09 Racing Car"/>
+            </div>
+
+            <a href="#hide">
+                <div class="button">
+                    Collapse section
+                </div>     
+            </a>
+        </section>
+    </a>
 </main>
 
+
 <footer>
-
 </footer>
-
 
 </body>
 </html>

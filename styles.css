@@ -1,9 +1,68 @@
-nav{
-    display: flex;
-    flex:
+body{
+    font-family: 'Roboto', sans-serif;
 }
 
-nav > img{
-    height: 10%;
-    width: auto;
+nav{
+    display: flex;
+    justify-content: flex-end;
+    margin-right:50px;
+}
+
+nav p{
+    margin: 10px;
+    font-weight: 1000;
+    font-size: 1em;
+}
+
+/* styling introductory images */
+.intro-images{
+    display:flex;
+    margin-bottom: 25px;
+    justify-content: flex-start;
+    overflow:hidden;
+}
+
+.intro-images > div{
+    width: 33%;
+    height: 250px;
+    overflow: visible;    
+}
+
+.intro-images > div > img{
+    width:130%;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translateY(-50%) translateX(-50%);    
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 22% 100%);
+    transition: scale 1s ease-in-out;
+}
+
+.intro-images > div:first-of-type > img{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+/* styling clickable sections */
+.clickable-section{
+    max-height:20px;
+    overflow: hidden;
+    transition: 1s ease-in-out;
+    margin-bottom: 50px; 
+}
+
+.clickable-section-image > img{
+    display: block;
+    margin: 10px auto;
+}
+
+:target{
+    max-height: 1000px;    
+}
+
+.button{
+    background-image: linear-gradient(silver,grey);
+    width:15%;
+    text-align: center;
+    margin: 0 auto;
+
 }
