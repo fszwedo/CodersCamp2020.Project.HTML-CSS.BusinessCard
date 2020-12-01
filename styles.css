@@ -1,68 +1,106 @@
-body{
-    font-family: 'Roboto', sans-serif;
+body {
+    font-family: 'Poppins', sans-serif;
+    margin:0;
 }
 
-nav{
+h3 {
+    font-weight: 400;
+    text-decoration: underline red;
+}
+
+nav {
     display: flex;
     justify-content: flex-end;
-    margin-right:50px;
+    margin-right: 50px;
 }
 
-nav p{
+nav p {
     margin: 10px;
     font-weight: 1000;
     font-size: 1em;
 }
 
-/* styling introductory images */
-.intro-images{
-    display:flex;
-    margin-bottom: 25px;
+header {
+    text-align: center;
+}
+
+body>div {
+    background-color: white;
+    
+    align-items: center;
+}
+
+.background-image{
+    z-index: -1;
+    position: fixed;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+/* styling introduction section*/
+
+.introduction-container {
+    display: grid;
+    grid-template: auto auto / 3fr 2fr;
+    justify-items: center;
+    margin: 20px auto;
+    align-items: center;
+    background-color: white;
+    padding: 25px 12.5%;    
+}
+
+.introduction-text {
+    margin-right: 50px;
+    line-height: 1.5;
+}
+
+.introduction-image {
+    justify-self: flex-start;
+}
+
+.introduction-buttons {
+    display: flex;
+    width: 100%;
     justify-content: flex-start;
-    overflow:hidden;
+
 }
 
-.intro-images > div{
-    width: 33%;
-    height: 250px;
-    overflow: visible;    
+.button {
+    text-align: center;
+    margin-right: 10px;
+    padding: 3px 10px;
+    border-radius: 5px;
+    border: 1px solid red;
 }
 
-.intro-images > div > img{
-    width:130%;
-    position: relative;
-    left: 50%;
-    top: 50%;
-    -webkit-transform: translateY(-50%) translateX(-50%);    
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 22% 100%);
-    transition: scale 1s ease-in-out;
+.test {
+    
+    background-color: transparent;
+    height: 100px;
+    width: 1000px;
+    z-index: -1;
 }
-
-.intro-images > div:first-of-type > img{
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+.test2 {
+    
+    height: 10000px;
+    width: 100%;
+    z-index: -1;
 }
 
 /* styling clickable sections */
-.clickable-section{
-    max-height:20px;
+.clickable-section {
+    max-height: 0px;
     overflow: hidden;
     transition: 1s ease-in-out;
-    margin-bottom: 50px; 
+    margin-bottom: 50px;
 }
 
-.clickable-section-image > img{
+
+.clickable-section-image>img {
     display: block;
     margin: 10px auto;
 }
 
-:target{
-    max-height: 1000px;    
-}
-
-.button{
-    background-image: linear-gradient(silver,grey);
-    width:15%;
-    text-align: center;
-    margin: 0 auto;
-
+:target {
+    max-height: 1000px;
 }
