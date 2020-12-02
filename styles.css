@@ -3,9 +3,32 @@ body {
     margin:0;
 }
 
-h3 {
+
+h1{
+    line-height: 0.2;
+    font-size: 5em;
+}
+
+h2{
+    font-weight: 400;
+    line-height: 0.5;
+    font-size: 3em;
+}
+
+h3{
+    font-weight: 600;
+    font-size: 1.5em;
+}
+h4 {
     font-weight: 400;
     text-decoration: underline red;
+}
+
+
+
+
+a{
+    text-decoration: none;
 }
 
 nav {
@@ -37,70 +60,127 @@ body>div {
     min-height: 100%;
 }
 
+
 /* styling introduction section*/
 
 .introduction-container {
     display: grid;
-    grid-template: auto auto / 3fr 2fr;
+    grid-template: auto auto / 2fr 2fr;
     justify-items: center;
-    margin: 20px auto;
+    margin: 20px 0;
     align-items: center;
     background-color: white;
-    padding: 25px 12.5%;    
+    padding: 0px 12.5%;    
 }
 
 .introduction-text {
-    margin-right: 50px;
+    margin-right: 0px;
     line-height: 1.5;
 }
 
 .introduction-image {
     justify-self: flex-start;
+    height:100%;
+    overflow: hidden;
+}
+
+.introduction-image > img {
+    justify-self: flex-start;    
+    height:100%;
+    position:relative;
+    top:10px;
 }
 
 .introduction-buttons {
     display: flex;
-    width: 100%;
     justify-content: flex-start;
-
+    padding-bottom: 20px;
 }
 
 .button {
+    color: black;
     text-align: center;
-    margin-right: 10px;
+    margin-right: 20px;
     padding: 3px 10px;
     border-radius: 5px;
     border: 1px solid red;
+    transition: 0.3s ease-in-out;
+    transition-property: background-color,color;
 }
 
-.test {
-    
-    background-color: transparent;
-    height: 100px;
-    width: 1000px;
-    z-index: -1;
+.button span{
+    text-decoration: none;
 }
-.test2 {
-    
-    height: 10000px;
+
+.button:hover {
+    background-color: tomato;
+    color: white;
+}
+
+.spacer {
+    background-color: transparent;
+    height: 50px;
     width: 100%;
     z-index: -1;
 }
 
-/* styling clickable sections */
-.clickable-section {
-    max-height: 0px;
-    overflow: hidden;
-    transition: 1s ease-in-out;
-    margin-bottom: 50px;
+/* styling about me section*/
+
+
+.about-me{
+    background-color: white;
+    display:flex;
+    width: 100%;
+    justify-content: center;
+    padding: 20px 0;
+    flex-wrap: wrap;
+}
+
+.about-me > img{
+    border-radius: 50%;
+    min-height: 200px;
+    padding: 0 50px;
+}
+
+.about-me > span{
+   
+    padding: 0 50px;
 }
 
 
-.clickable-section-image>img {
-    display: block;
-    margin: 10px auto;
-}
+/* MOBILE */
+@media (max-width: 480px) {
+    .introduction-container {
+        display: grid;
+        grid-template: auto auto / auto;
+        justify-items: center;
+        margin: 20px auto;
+        align-items: center;
+        background-color: white;
+        padding: 0px 12.5%;
+    }
 
-:target {
-    max-height: 1000px;
+
+    .introduction-text {
+        margin-right: 0px;
+        line-height: 1.5;
+    }
+
+    .introduction-image {
+        justify-self: flex-start;
+        height: 100%;
+        overflow: hidden;
+    }
+
+    .test {
+        width:100%;
+    }
+
+    .test2 {
+        width:100%;
+    }
+
+    .background-image {
+        width:100%;
+    }
 }
