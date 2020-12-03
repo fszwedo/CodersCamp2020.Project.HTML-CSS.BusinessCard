@@ -1,8 +1,8 @@
 body {
     font-family: 'Poppins', sans-serif;
     margin:0;
+    background-color: black;
 }
-
 
 h1{
     line-height: 0.2;
@@ -23,9 +23,6 @@ h4 {
     font-weight: 400;
     text-decoration: underline red;
 }
-
-
-
 
 a{
     text-decoration: none;
@@ -48,8 +45,7 @@ header {
 }
 
 body>div {
-    background-color: white;
-    
+    background-color: white;    
     align-items: center;
 }
 
@@ -57,9 +53,22 @@ body>div {
     z-index: -1;
     position: fixed;
     min-width: 100%;
-    min-height: 100%;
+    min-height: 100%;    
+    opacity: 0.5;
 }
 
+.social-link-wrapper{
+    background-color: white;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    display:none;
+}
+
+.social-link{
+    width:5%;
+    display: block;
+}
 
 /* styling introduction section*/
 
@@ -67,7 +76,7 @@ body>div {
     display: grid;
     grid-template: auto auto / 2fr 2fr;
     justify-items: center;
-    margin: 20px 0;
+    margin: 0;
     align-items: center;
     background-color: white;
     padding: 0px 12.5%;    
@@ -148,13 +157,39 @@ body>div {
 }
 
 
+/* styling form */
+
+form{
+    width:100%;
+    background-color: white;
+    padding: 10px 0;
+}
+
+.form-inner{
+    width:50%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.form-inner > input, 
+.form-inner > textarea,
+.form-inner > button{
+    display:block;
+    margin: 10px auto;
+}
 /* MOBILE */
 @media (max-width: 480px) {
+    h2{
+        font-weight: 400;
+        line-height: 0.5;
+        font-size: 2em;
+    }
+
     .introduction-container {
         display: grid;
         grid-template: auto auto / auto;
         justify-items: center;
-        margin: 20px auto;
+        margin: 0 auto;
         align-items: center;
         background-color: white;
         padding: 0px 12.5%;
