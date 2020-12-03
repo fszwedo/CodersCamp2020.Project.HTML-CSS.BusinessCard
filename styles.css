@@ -80,6 +80,8 @@ body>div {
     align-items: center;
     background-color: white;
     padding: 0px 12.5%;    
+    box-sizing: border-box;
+    width:100%;
 }
 
 .introduction-text {
@@ -143,6 +145,7 @@ body>div {
     justify-content: center;
     padding: 20px 0;
     flex-wrap: wrap;
+    box-sizing: border-box;
 }
 
 .about-me > img{
@@ -163,6 +166,7 @@ form{
     width:100%;
     background-color: white;
     padding: 10px 0;
+    box-sizing: border-box;
 }
 
 .form-inner{
