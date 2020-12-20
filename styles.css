@@ -91,11 +91,10 @@ body>div {
 .introduction-container {
     position: relative;
     background-color: rgba(0, 0, 0, 0);
-    box-sizing: border-box;
     width: 100%;
     overflow: hidden;
     color: var(--bialy);
-    padding: 5% 0;
+    padding: 5% 5%;
 }
 
 .introduction-text {
@@ -149,7 +148,6 @@ body>div {
     justify-content: center;
     padding: 5% 0;
     flex-wrap: wrap;
-    box-sizing: border-box;
 }
 
 .about-me>img {
@@ -223,12 +221,17 @@ input.spacer-more:checked~.expandable-container {
 .expandable-container>span {
     padding: 5%;
     text-align: left;
-    text-justify: inter-word;
 }
 
-.expandable-container>img {
-    width: 80%;
+.expandable-container-photo {
+    width: 70%;
     height: auto;
+    overflow: hidden;
+    margin-bottom: 40px;
+}
+
+.expandable-container-photo>img {
+    width: 100%;
 }
 
 /* styling form */
@@ -237,8 +240,6 @@ form {
     width: 100%;
     background-color: var(--bialy);
     padding: 10px 0;
-    box-sizing: border-box;
-
 }
 
 form h2 {
@@ -284,7 +285,6 @@ form h2 {
     width: 90%;
     min-height: 40px;
     padding-left: 20px;
-    box-sizing: border-box;
     border: none;
     border-radius: 5px;
     background-color: rgba(220, 220, 220, 0.5);

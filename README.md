@@ -1,17 +1,30 @@
-# README Projektu HTML + CSS Filip Szwedo #
+# README for HTML + CSS project Filip Szwedo #
 
-### Dla ułatwienia poniżej wylistowane przykładowe miejsca w których użyto poszczególnych zagadnień z krótkim opisem ###
+index.html contains the HTML structure of the page
+style.css contains CSS styling of the page
 
-- Box-model
-- Kaskadowość CSS
-- Selektory CSS
-- Popularne tagi HTML
-- Jak podpinać CSSa do HTMLa
-- Zapisywanie kolorów
-- Stylowanie tekstu
-- Zewnętrzne ikony/fonty (fontawesome, google fonts)
-- Flexbox i/lub CSS Grid
+### The project contains examples of the basign HTML and CSS functionalities as:###
+
+- Box-model 
+- Cascading CSS
+- CSS selectors
+- Popular HTML tags
+- HTML - CSS connection
+- Color description
+- Text styling
+- Outside colors/fonts (google fonts)
+- Flexbox and CSS Grid
 - Position (absolute, relative)
-- Animacje keyframes
-- Formularz 
-- Responsive Web Design
+- Keyframes animations
+- Form setup 
+- Responsive Web Design (media queries)
+
+
+### Interesting things ###
+
+- moving background image for introduction container
+- static background image for the 'photos' section (does not scroll with page)
+- clickable images opening the full-screen picture desctiption (pure css 'trick' with using the 'checked' checkbox pseudoclass)
+
+
+## Hope you'll like it :) ##
